@@ -6,10 +6,10 @@ board = new five.Board();
 
 // Setup for bread board
 // Wire Color   =>  Meaning   =>  Arduino Pin Down
-// Yellow       =>  SCK       =>  A04
+// Yellow       =>  SCK       =>  A05
 // White        =>  GND       =>  Ground
 // Red          =>  5v        =>  5v
-// Green        =>  SDA       =>  A05
+// Green        =>  SDA       =>  A04
 
 
 board.on("ready", function() {

@@ -38,7 +38,7 @@ board.on("ready", function() {
   // Fired when the joystick detects a change in
   // axis position.
   //
-  nunchuk.joystick.left.on( "change", function( err, event ) {
+  classicController.joystick.left.on( "change", function( err, event ) {
     console.log(
       "Left joystick " + event.axis,
       event.target[ event.axis ],
@@ -46,7 +46,7 @@ board.on("ready", function() {
     );
   });
 
-  nunchuk.joystick.right.on( "change", function( err, event ) {
+  classicController.joystick.right.on( "change", function( err, event ) {
     console.log(
       "Right joystick " + event.axis,
       event.target[ event.axis ],
@@ -78,7 +78,7 @@ board.on("ready", function() {
 
   [ "down", "up", "hold" ].forEach(function( type ) {
 
-    nunchuk.on( type, function( err, event ) {
+    classicController.on( type, function( err, event ) {
       console.log(
         event.target.which + " is " + type,
 
